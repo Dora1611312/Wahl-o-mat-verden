@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f0f4f8;
+    color: #1e2f3f;
+    min-height: 100vh;
+}
+
+header {
+    background: white;
+    padding: 40px 20px 30px;
+    text-align: center;
+    border-bottom: 3px solid #1a5c8a;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    color: #0b2b44;
+    font-size: 2.2rem;
+}
+
+header p {
+    color: #3d5a73;
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    color: #0b2b44;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 14px 28px;
+    margin: 6px 6px 6px 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.15s;
+    background: #eef2f6;
+    color: #1d3b55;
+}
+
+button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#startButton, #nextButton, #restartButton {
+    background: #1a5c8a;
+    color: white;
+    padding: 16px 40px;
+    font-size: 1.15rem;
+    border-radius: 60px;
+    box-shadow: 0 4px 0 #0f3b5a;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#startButton:hover, #nextButton:hover, #restartButton:hover {
+    background: #1f6fa3;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 25px 0 20px;
+}
+
+#answers button {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    background: #f7faff;
+    border: 2px solid #dde7f0;
+    border-radius: 14px;
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+#answers button:hover {
+    background: #e8f0fa;
+    border-color: #8ba3c2;
+}
+
+#answers button.selected {
+    background: #1a5c8a;
+    color: white;
+    border-color: #1a5c8a;
+}
+
+#answers button.selected:hover {
+    background: #1f6fa3;
+}
+
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background: #1a5c8a;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    font-weight: 600;
+    color: #3d5a73;
+    margin-bottom: 10px;
+}
+
+#thesis {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #0b1e2e;
+    margin: 20px 0 5px;
+}
+
+#themaLabel {
+    color: #5b6f82;
+    font-size: 0.9rem;
+    background: #f0f4f8;
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+/* Ergebnis */
+#results {
+    margin: 25px 0;
+}
+
+.result-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    background: #f8fafc;
+    border-radius: 14px;
+    border-left: 6px solid #1a5c8a;
+    transition: 0.1s;
+}
+
+.result-card.top {
+    background: #e1f0fa;
+    border-left-color: #0f4b73;
+    font-weight: 600;
+}
+
+.result-party {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.result-percent {
+    background: white;
+    padding: 4px 16px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #0b2b44;
+}
+
+.result-percent.high {
+    background: #1a7a4a;
+    color: white;
+}
+
+@media (max-width: 550px) {
+    section { padding: 25px 20px; }
+    header h1 { font-size: 1.6rem; }
+    #thesis { font-size: 1.2rem; }
+    .result-card { flex-direction: column; text-align: center; gap: 8px; }
+}
