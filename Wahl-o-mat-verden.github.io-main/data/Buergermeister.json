@@ -1,0 +1,112 @@
+{
+    "projekt": {
+        "name": "Wahl-O-Mat Bürgermeisterwahl Verden 2026",
+        "beschreibung": "Vergleiche deine Positionen mit den Kandidat:innen für das Bürgermeisteramt.",
+        "stand": "2026-08-30",
+        "wahltermin": "2026-09-13",
+        "stichwahl": "2026-09-27"
+    },
+    "kandidaten": [
+        {
+            "id": "lange",
+            "name": "Claudia Lange",
+            "kurzname": "Lange",
+            "unterstuetzt_von": "SPD & Grüne",
+            "farbe": "#e3000f",
+            "webseite": "https://claudia-lange-verden.de"
+        },
+        {
+            "id": "symank",
+            "name": "Björn Symank",
+            "kurzname": "Symank",
+            "unterstuetzt_von": "CDU",
+            "farbe": "#1a1a1a",
+            "webseite": "https://bjoern-symank.de"
+        },
+        {
+            "id": "hartmann",
+            "name": "Christina Hartmann",
+            "kurzname": "Hartmann",
+            "unterstuetzt_von": "parteilos",
+            "farbe": "#be3075",
+            "webseite": "https://hartmann-verden.de"
+        },
+        {
+            "id": "fischer",
+            "name": "Benedikt Fischer",
+            "kurzname": "Fischer",
+            "unterstuetzt_von": "parteilos",
+            "farbe": "#f28c0a",
+            "webseite": "https://bene-fischer-verden.de"
+        }
+    ],
+    "themen": [
+        { "id": "wohnen", "name": "Wohnen & Stadtentwicklung" },
+        { "id": "verkehr", "name": "Verkehr & Mobilität" },
+        { "id": "innenstadt", "name": "Innenstadt & Wirtschaft" },
+        { "id": "digitales", "name": "Digitalisierung & Verwaltung" },
+        { "id": "soziales", "name": "Soziales & Gesundheit" }
+    ],
+    "thesen": [
+        {
+            "id": 1,
+            "thema": "wohnen",
+            "these": "Die Stadt Verden sollte eine Stadtentwicklungsgesellschaft gründen, um Wohnungsbau und Innenstadtentwicklung zu fördern.",
+            "positionen": { "lange": 5, "symank": 5, "hartmann": 3, "fischer": 2 }
+        },
+        {
+            "id": 2,
+            "thema": "wohnen",
+            "these": "Bis 2035 sollten in Verden mindestens 750 neue Wohnungen gebaut werden.",
+            "positionen": { "lange": 5, "symank": 4, "hartmann": 4, "fischer": 3 }
+        },
+        {
+            "id": 3,
+            "thema": "wohnen",
+            "these": "Bei größeren Bauvorhaben sollten 20 % der Wohnungen für Menschen mit geringem Einkommen reserviert sein.",
+            "positionen": { "lange": 5, "symank": 2, "hartmann": 3, "fischer": 2 }
+        },
+        {
+            "id": 4,
+            "thema": "innenstadt",
+            "these": "Die Fußgängerzone in der Innenstadt sollte teilweise für den Autoverkehr geöffnet werden.",
+            "positionen": { "lange": 1, "symank": 2, "hartmann": 5, "fischer": 2 }
+        },
+        {
+            "id": 5,
+            "thema": "innenstadt",
+            "these": "Der Rathausplatz sollte umgebaut und neugestaltet werden (z.B. mit mehr Grün, Sitzgelegenheiten).",
+            "positionen": { "lange": 4, "symank": 3, "hartmann": 5, "fischer": 3 }
+        },
+        {
+            "id": 6,
+            "thema": "verkehr",
+            "these": "Die Südbrücke sollte zweispurig mit beidseitigen Rad- und Gehwegen neu gebaut werden.",
+            "positionen": { "lange": 5, "symank": 4, "hartmann": 5, "fischer": 3 }
+        },
+        {
+            "id": 7,
+            "thema": "verkehr",
+            "these": "Es sollte ein dritter Allerübergang (Brücke) bei Wahnebergen gebaut werden.",
+            "positionen": { "lange": 2, "symank": 5, "hartmann": 3, "fischer": 2 }
+        },
+        {
+            "id": 8,
+            "thema": "wohnen",
+            "these": "Bezahlbare Wohnungen sollten gezielt an Ausbildungsplätze gekoppelt werden, um junge Fachkräfte zu halten.",
+            "positionen": { "lange": 4, "symank": 3, "hartmann": 3, "fischer": 5 }
+        },
+        {
+            "id": 9,
+            "thema": "digitales",
+            "these": "Die Stadt sollte ein digitales Rathaus mit einer eigenen App für Bürgerdienstleistungen einführen.",
+            "positionen": { "lange": 4, "symank": 3, "hartmann": 3, "fischer": 5 }
+        },
+        {
+            "id": 10,
+            "thema": "soziales",
+            "these": "Die Stadt sollte sich für den Erhalt und Ausbau des Krankenhauses in kommunaler Trägerschaft einsetzen.",
+            "positionen": { "lange": 5, "symank": 3, "hartmann": 4, "fischer": 3 }
+        }
+    ]
+}

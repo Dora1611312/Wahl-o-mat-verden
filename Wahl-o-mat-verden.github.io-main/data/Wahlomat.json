@@ -1,0 +1,364 @@
+{
+    "projekt": {
+        "name": "Verden Wahl-O-Mat 2026",
+        "beschreibung": "Politischer Positionsvergleich zur Kommunalwahl und Bürgermeisterwahl in Verden (Aller). Die Positionen basieren auf den verfügbaren Wahlprogrammen (Stand: August 2026).",
+        "stand": "2026-08-30",
+        "wahltermin": "2026-09-13",
+        "stichwahl": "2026-09-27"
+    },
+    "stadtratswahl": {
+        "name": "Wahl zum Rat der Stadt Verden (Aller)",
+        "wahltermin": "2026-09-13",
+        "parteien": [
+            {
+                "id": "cdu",
+                "name": "Christlich Demokratische Union Deutschlands",
+                "kurzname": "CDU",
+                "farbe": "#1a1a1a",
+                "typ": "partei"
+            },
+            {
+                "id": "spd",
+                "name": "Sozialdemokratische Partei Deutschlands",
+                "kurzname": "SPD",
+                "farbe": "#e3000f",
+                "typ": "partei"
+            },
+            {
+                "id": "gruene",
+                "name": "BÜNDNIS 90/DIE GRÜNEN",
+                "kurzname": "GRÜNE",
+                "farbe": "#1a9c4a",
+                "typ": "partei"
+            },
+            {
+                "id": "fdp",
+                "name": "Freie Demokratische Partei",
+                "kurzname": "FDP",
+                "farbe": "#ffdd00",
+                "typ": "partei"
+            },
+            {
+                "id": "linke",
+                "name": "DIE LINKE. Niedersachsen",
+                "kurzname": "DIE LINKE.",
+                "farbe": "#be3075",
+                "typ": "partei"
+            },
+            {
+                "id": "freie_waehler",
+                "name": "FREIE WÄHLER Niedersachsen",
+                "kurzname": "FREIE WÄHLER",
+                "farbe": "#f28c0a",
+                "typ": "waehlergruppe"
+            },
+            {
+                "id": "afd",
+                "name": "Alternative für Deutschland",
+                "kurzname": "AfD",
+                "farbe": "#009ee0",
+                "typ": "partei"
+            }
+        ]
+    },
+    "buergermeisterwahl": {
+        "name": "Wahl der Bürgermeisterin / des Bürgermeisters",
+        "wahltermin": "2026-09-13",
+        "kandidierende": []
+    },
+    "themen": [
+        { "id": "wohnen", "name": "Wohnen & Stadtentwicklung" },
+        { "id": "verkehr", "name": "Verkehr & Mobilität" },
+        { "id": "klima", "name": "Klima & Umwelt" },
+        { "id": "finanzen", "name": "Finanzen & Steuern" },
+        { "id": "bildung", "name": "Bildung & Betreuung" },
+        { "id": "wirtschaft", "name": "Wirtschaft & Innenstadt" },
+        { "id": "soziales", "name": "Soziales & Gesundheit" },
+        { "id": "jugend", "name": "Jugend & Familie" },
+        { "id": "sicherheit", "name": "Sicherheit & Feuerwehr" },
+        { "id": "kultur", "name": "Kultur & Freizeit" },
+        { "id": "verwaltung", "name": "Verwaltung & Bürgerbeteiligung" }
+    ],
+    "thesen": [
+        {
+            "id": 1,
+            "thema": "wohnen",
+            "these": "Verden sollte bis 2035 insgesamt 750 neue Wohnungen schaffen.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 4,
+                "fdp": 3,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 2
+            }
+        },
+        {
+            "id": 2,
+            "thema": "wohnen",
+            "these": "Bei größeren Bauvorhaben sollten mindestens 20 Prozent der Wohnungen für Menschen mit geringem Einkommen vorgesehen werden.",
+            "positionen": {
+                "cdu": 2,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 1,
+                "linke": 5,
+                "freie_waehler": 3,
+                "afd": 1
+            }
+        },
+        {
+            "id": 3,
+            "thema": "wohnen",
+            "these": "Bei der Stadtentwicklung sollte die Nutzung bereits bebauter Flächen Vorrang vor neuen Siedlungsgebieten haben.",
+            "positionen": {
+                "cdu": 3,
+                "spd": 4,
+                "gruene": 5,
+                "fdp": 2,
+                "linke": 5,
+                "freie_waehler": 3,
+                "afd": 2
+            }
+        },
+        {
+            "id": 4,
+            "thema": "klima",
+            "these": "Alle städtischen Gebäude und Immobilien sollten bis 2035 bilanziell klimaneutral betrieben werden.",
+            "positionen": {
+                "cdu": 3,
+                "spd": 4,
+                "gruene": 5,
+                "fdp": 2,
+                "linke": 5,
+                "freie_waehler": 3,
+                "afd": 1
+            }
+        },
+        {
+            "id": 5,
+            "thema": "klima",
+            "these": "Die Stadt sollte auf geeigneten kommunalen Dächern Photovoltaikanlagen installieren.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 4,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 2
+            }
+        },
+        {
+            "id": 6,
+            "thema": "verkehr",
+            "these": "Das Mobilitätskonzept der Stadt Verden sollte konsequent umgesetzt werden.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 4,
+                "linke": 4,
+                "freie_waehler": 4,
+                "afd": 3
+            }
+        },
+        {
+            "id": 7,
+            "thema": "verkehr",
+            "these": "Das Stadtbussystem sollte für Menschen unter 21 Jahren kostenlos oder deutlich vergünstigt angeboten werden.",
+            "positionen": {
+                "cdu": 2,
+                "spd": 4,
+                "gruene": 5,
+                "fdp": 1,
+                "linke": 5,
+                "freie_waehler": 3,
+                "afd": 1
+            }
+        },
+        {
+            "id": 8,
+            "thema": "verkehr",
+            "these": "Die Südbrücke sollte zweispurig neu gebaut werden und auf beiden Seiten Rad- und Gehwege erhalten.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 4,
+                "linke": 5,
+                "freie_waehler": 5,
+                "afd": 4
+            }
+        },
+        {
+            "id": 9,
+            "thema": "verkehr",
+            "these": "Die Stadt sollte ein digitales Parkleitsystem zur besseren Steuerung des Autoverkehrs einführen.",
+            "positionen": {
+                "cdu": 5,
+                "spd": 4,
+                "gruene": 3,
+                "fdp": 5,
+                "linke": 3,
+                "freie_waehler": 4,
+                "afd": 4
+            }
+        },
+        {
+            "id": 10,
+            "thema": "wirtschaft",
+            "these": "Die Fußgängerzone in der Verdener Innenstadt sollte weiterentwickelt werden, wobei auch eine teilweise Verkürzung geprüft werden sollte.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 4,
+                "gruene": 4,
+                "fdp": 3,
+                "linke": 3,
+                "freie_waehler": 4,
+                "afd": 4
+            }
+        },
+        {
+            "id": 11,
+            "thema": "wirtschaft",
+            "these": "Verden sollte eine Stadtentwicklungsgesellschaft gründen, die unter anderem die Innenstadtentwicklung und den kommunalen Wohnungsbau voranbringt.",
+            "positionen": {
+                "cdu": 3,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 2,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 1
+            }
+        },
+        {
+            "id": 12,
+            "thema": "bildung",
+            "these": "Die Stadt sollte Ganztagsangebote an Grundschulen weiter ausbauen.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 4,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 2
+            }
+        },
+        {
+            "id": 13,
+            "thema": "soziales",
+            "these": "Die Stadt sollte sich für den Erhalt und die Weiterentwicklung des Krankenhauses in kommunaler Trägerschaft einsetzen.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 3,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 3
+            }
+        },
+        {
+            "id": 14,
+            "thema": "finanzen",
+            "these": "Die Stadt sollte wichtige Investitionen grundsätzlich ohne neue Kredite finanzieren.",
+            "positionen": {
+                "cdu": 5,
+                "spd": 2,
+                "gruene": 2,
+                "fdp": 5,
+                "linke": 1,
+                "freie_waehler": 4,
+                "afd": 5
+            }
+        },
+        {
+            "id": 15,
+            "thema": "verwaltung",
+            "these": "Die Stadtverwaltung sollte Verwaltungsleistungen konsequent digitalisieren, damit Bürgerinnen und Bürger Behördengänge einfacher online erledigen können.",
+            "positionen": {
+                "cdu": 5,
+                "spd": 4,
+                "gruene": 5,
+                "fdp": 5,
+                "linke": 4,
+                "freie_waehler": 4,
+                "afd": 3
+            }
+        },
+        {
+            "id": 16,
+            "thema": "sicherheit",
+            "these": "Verden sollte seine Infrastruktur für Hochwasser, Stromausfälle und andere Krisen weiter ausbauen.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 3,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 3
+            }
+        },
+        {
+            "id": 17,
+            "thema": "kultur",
+            "these": "Die Stadt sollte weiterhin in moderne Sporthallen, Sportplätze und Bewegungsangebote investieren.",
+            "positionen": {
+                "cdu": 5,
+                "spd": 5,
+                "gruene": 4,
+                "fdp": 4,
+                "linke": 5,
+                "freie_waehler": 5,
+                "afd": 4
+            }
+        },
+        {
+            "id": 18,
+            "thema": "klima",
+            "these": "Verden sollte bestehende Grünflächen stärker ökologisch gestalten und mehr Lebensräume für Tiere und Pflanzen schaffen.",
+            "positionen": {
+                "cdu": 3,
+                "spd": 4,
+                "gruene": 5,
+                "fdp": 2,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 1
+            }
+        },
+        {
+            "id": 19,
+            "thema": "klima",
+            "these": "Bei neuen Bauprojekten sollte die Stadt stärker darauf achten, Regenwasser vor Ort zurückzuhalten und Flächen möglichst wenig zu versiegeln.",
+            "positionen": {
+                "cdu": 3,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 2,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 1
+            }
+        },
+        {
+            "id": 20,
+            "thema": "jugend",
+            "these": "Kinder und Jugendliche sollten stärker an kommunalpolitischen Entscheidungen beteiligt werden.",
+            "positionen": {
+                "cdu": 4,
+                "spd": 5,
+                "gruene": 5,
+                "fdp": 3,
+                "linke": 5,
+                "freie_waehler": 4,
+                "afd": 2
+            }
+        }
+    ]
+}
