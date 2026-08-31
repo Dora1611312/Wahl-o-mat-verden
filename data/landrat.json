@@ -1,0 +1,125 @@
+{
+    "projekt": {
+        "name": "Wahl-O-Mat Landratswahl Verden 2026",
+        "beschreibung": "Vergleiche deine Positionen mit den Kandidaten für das Amt des Landrats im Landkreis Verden.",
+        "stand": "2026-08-31",
+        "wahltermin": "2026-09-13"
+    },
+    "kandidaten": [
+        {
+            "id": "bohlmann",
+            "name": "Peter Bohlmann",
+            "kurzname": "Bohlmann",
+            "unterstuetzt_von": "SPD, unterstützt von CDU",
+            "farbe": "#e3000f",
+            "info": "Amtierender Landrat"
+        },
+        {
+            "id": "pein",
+            "name": "Christoph Pein",
+            "kurzname": "Pein",
+            "unterstuetzt_von": "FDP",
+            "farbe": "#ffdd00",
+            "info": "FDP-Kreisvorsitzender"
+        }
+    ],
+    "themen": [
+        { "id": "klima", "name": "Klima & Energie" },
+        { "id": "mobilitaet", "name": "Mobilität & Verkehr" },
+        { "id": "wohnen", "name": "Wohnen & Bauen" },
+        { "id": "wirtschaft", "name": "Wirtschaft & Arbeit" },
+        { "id": "soziales", "name": "Soziales & Ehrenamt" }
+    ],
+    "thesen": [
+        {
+            "id": 1,
+            "thema": "klima",
+            "these": "Der Landkreis Verden muss seine Klimaschutzaktivitäten deutlich ausbauen und das Ziel der Klimaneutralität entschlossener verfolgen.",
+            "positionen": {
+                "bohlmann": 4,
+                "pein": 3
+            }
+        },
+        {
+            "id": 2,
+            "thema": "klima",
+            "these": "Die kommunale Wärmeplanung ist ein zentrales Werkzeug, um die Wärmewende im Landkreis sozialverträglich und planbar zu gestalten.",
+            "positionen": {
+                "bohlmann": 4,
+                "pein": 3
+            }
+        },
+        {
+            "id": 3,
+            "thema": "mobilitaet",
+            "these": "Der Landkreis muss sich stärker für den Ausbau des Radverkehrsnetzes und die Schaffung sicherer Radwege einsetzen.",
+            "positionen": {
+                "bohlmann": 4,
+                "pein": 3
+            }
+        },
+        {
+            "id": 4,
+            "thema": "mobilitaet",
+            "these": "Bei Verkehrsplanungen sollte der Fuß- und Radverkehr Vorrang vor dem motorisierten Individualverkehr haben.",
+            "positionen": {
+                "bohlmann": 3,
+                "pein": 2
+            }
+        },
+        {
+            "id": 5,
+            "thema": "wohnen",
+            "these": "Der Landkreis muss sich aktiv für den Bau von bezahlbarem Wohnraum einsetzen, insbesondere durch die Unterstützung der Kreisbaugesellschaft.",
+            "positionen": {
+                "bohlmann": 5,
+                "pein": 4
+            }
+        },
+        {
+            "id": 6,
+            "thema": "wohnen",
+            "these": "Bei größeren Bauvorhaben sollte ein Anteil von 20% der Wohnungen für Menschen mit geringem Einkommen reserviert werden.",
+            "positionen": {
+                "bohlmann": 5,
+                "pein": 2
+            }
+        },
+        {
+            "id": 7,
+            "thema": "wirtschaft",
+            "these": "Die Wirtschaftsförderung des Landkreises muss weiter gestärkt werden, um Arbeitsplätze zu sichern und neue Unternehmen anzuziehen.",
+            "positionen": {
+                "bohlmann": 4,
+                "pein": 5
+            }
+        },
+        {
+            "id": 8,
+            "thema": "wirtschaft",
+            "these": "Der Landkreis sollte sich für die Ansiedlung einer Fachhochschule oder einer vergleichbaren Bildungseinrichtung einsetzen.",
+            "positionen": {
+                "bohlmann": 4,
+                "pein": 4
+            }
+        },
+        {
+            "id": 9,
+            "thema": "soziales",
+            "these": "Das Ehrenamt im Landkreis muss durch konkrete Maßnahmen wie einen Ehrenamtspreis oder eine erleichterte Ehrenamtskarte gestärkt werden.",
+            "positionen": {
+                "bohlmann": 5,
+                "pein": 3
+            }
+        },
+        {
+            "id": 10,
+            "thema": "soziales",
+            "these": "Die ambulante medizinische Versorgung und die Pflegeinfrastruktur im ländlichen Raum müssen durch den Landkreis aktiv unterstützt werden.",
+            "positionen": {
+                "bohlmann": 4,
+                "pein": 4
+            }
+        }
+    ]
+}
