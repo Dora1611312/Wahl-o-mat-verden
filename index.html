@@ -3,73 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verden Wahl-O-Mat 2026</title>
+    <title>Wahl-O-Mat Verden 2026 – Übersicht</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Zusätzliche Styles für die Karten-Übersicht */
+        .wahl-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0 20px;
+        }
+        .wahl-card {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 25px 20px 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .wahl-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+        .wahl-card .icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .wahl-card h3 {
+            color: #0b2b44;
+            margin-bottom: 8px;
+            font-size: 1.4rem;
+        }
+        .wahl-card p {
+            color: #3d5a73;
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        .wahl-card .btn-link {
+            display: inline-block;
+            background: #1a5c8a;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.15s;
+            box-shadow: 0 4px 0 #0f3b5a;
+        }
+        .wahl-card .btn-link:hover {
+            background: #1f6fa3;
+        }
+        .wahl-card .btn-link:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #0f3b5a;
+        }
+        .hinweis-box {
+            background: #fff3cd;
+            border-left: 6px solid #ffc107;
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 25px 0 10px;
+            font-size: 0.95rem;
+            color: #856404;
+        }
+        .hinweis-box a {
+            color: #0b2b44;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #5b6f82;
+            font-size: 0.85rem;
+            border-top: 1px solid #dde7f0;
+            padding-top: 25px;
+        }
+        @media (max-width: 650px) {
+            .wahl-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>🗳️ Verden Wahl-O-Mat 2026</h1>
-        <p>Finde heraus, welche Partei deine Positionen in Verden (Aller) vertritt.</p>
-        <p style="font-size: 0.9rem; color: #666;">Kommunal- & Bürgermeisterwahl · 13. September 2026</p>
+        <h1>🗳️ Wahl-O-Mat Verden 2026</h1>
+        <p>Vergleiche deine Positionen mit den Kandidat:innen und Parteien.</p>
+        <p style="font-size: 0.9rem; color: #666;">Wähle eine der folgenden Wahlen aus:</p>
     </header>
 
     <main>
-        <!-- START -->
-        <section id="start">
-            <h2>Willkommen</h2>
-            <p>Beantworte <strong>20 Thesen</strong> zur Stadtpolitik in Verden.</p>
-            <p>Deine Antworten werden mit den Positionen der Parteien verglichen.</p>
+        <section>
+            <div class="wahl-grid">
 
-            <!-- ⚠️ NEU: Entwicklungs-Hinweis und E-Mail -->
-            <div style="background: #fff3cd; border-left: 6px solid #ffc107; padding: 16px 20px; border-radius: 10px; margin: 20px 0; font-size: 0.95rem;">
-                <strong style="color: #856404;">🚧 Hinweis:</strong>
-                <span style="color: #856404;">
-                    Diese Website befindet sich noch in der <strong>Entwicklungsphase</strong>.
-                    Die dargestellten Parteipositionen basieren auf den verfügbaren Quellen (Stand: August 2026) und sind teilweise geschätzt.
-                    Sie ersetzt keine offizielle Wahlberatung.
-                </span>
+                <!-- Karte: Stadtrat -->
+                <div class="wahl-card">
+                    <div class="icon">🏛️</div>
+                    <h3>Stadtratswahl</h3>
+                    <p>
+                        Vergleich mit 7 Parteien (CDU, SPD, Grüne, FDP, Linke, Freie Wähler, AfD) zu 20 Thesen.
+                    </p>
+                    <a href="stadtrat.html" class="btn-link">Jetzt starten</a>
+                </div>
+
+                <!-- Karte: Bürgermeister -->
+                <div class="wahl-card">
+                    <div class="icon">👤</div>
+                    <h3>Bürgermeisterwahl</h3>
+                    <p>
+                        Vergleich der vier Kandidat:innen: Claudia Lange, Björn Symank, Christina Hartmann, Benedikt Fischer.
+                    </p>
+                    <a href="buergermeister.html" class="btn-link">Jetzt starten</a>
+                </div>
+
+                <!-- Karte: Landrat -->
+                <div class="wahl-card">
+                    <div class="icon">🌍</div>
+                    <h3>Landratswahl</h3>
+                    <p>
+                        Vergleich der beiden Kandidaten: Peter Bohlmann (SPD/CDU) und Christoph Pein (FDP).
+                    </p>
+                    <a href="landrat.html" class="btn-link">Jetzt starten</a>
+                </div>
+
+            </div>
+
+            <!-- Entwicklungs-Hinweis & E-Mail -->
+            <div class="hinweis-box">
+                <strong>🚧 Hinweis:</strong>
+                Diese Seiten befinden sich noch in der <strong>Entwicklungsphase</strong>.
+                Die Positionen basieren auf öffentlich zugänglichen Aussagen und sind teilweise geschätzt.
+                Sie ersetzen keine offizielle Wahlberatung.
                 <br>
-                <span style="color: #856404;">
-                    📧 Für <strong>Rückmeldungen, Verbesserungsvorschläge oder Ideen</strong> schreibe uns gerne an:
-                    <a href="mailto:mail@berglivedora1517.de" style="color: #0b2b44; font-weight: 600;">mail@berglivedora1517.de</a>
-                </span>
+                📧 Für <strong>Rückmeldungen, Verbesserungsvorschläge oder Ideen</strong> schreibe uns gerne an:
+                <a href="mailto:mail@berglivedora1517.de">mail@berglivedora1517.de</a>
             </div>
 
-            <button id="startButton">Wahl-O-Mat starten</button>
-        </section>
-
-        <!-- QUIZ -->
-        <section id="quiz" hidden>
-            <div id="progressBar">
-                <div id="progressFill"></div>
-            </div>
-            <p id="progressText">Frage 1 von 20</p>
-            <h2 id="thesis"></h2>
-            <p style="color: #666; font-size: 0.9rem;" id="themaLabel"></p>
-            <div id="answers">
-                <button data-answer="5">✅ Stimme zu</button>
-                <button data-answer="4">👍 Eher zu</button>
-                <button data-answer="3">➖ Neutral</button>
-                <button data-answer="2">👎 Eher nicht</button>
-                <button data-answer="1">❌ Stimme nicht zu</button>
-            </div>
-            <button id="nextButton">Weiter →</button>
-        </section>
-
-        <!-- RESULT -->
-        <section id="result" hidden>
-            <h2>📊 Dein Wahlergebnis</h2>
-            <p>So hoch ist deine Übereinstimmung mit den Parteien in Verden:</p>
-            <div id="results"></div>
-            <button id="restartButton">🔄 Neu starten</button>
-            <p style="font-size: 0.8rem; color: #888; margin-top: 20px;">
-                ⚠️ Die Positionen basieren auf allgemeinen Programmen und sind Beispieldaten für 2026.<br>
-                Bitte informiere dich bei den lokalen Kandidaten über die aktuellen Wahlprogramme.
-            </p>
+            <footer>
+                <p>Stand: September 2026 · Wahltermine: 13.09.2026 (Hauptwahl) · 27.09.2026 (Stichwahl)</p>
+            </footer>
         </section>
     </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
