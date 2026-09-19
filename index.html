@@ -3,64 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wahl-O-Mat Verden 2026 – Übersicht</title>
+    <title>Wahl-O-Mat Verden 2026 – Wahl beendet</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/favicon.png" type="image/png">
     <style>
-        /* Zusätzliche Styles für die Karten-Übersicht */
+        /* Zusätzliche Styles für die Abschluss-Seite */
+        .abschluss-box {
+            text-align: center;
+            padding: 30px 20px 40px;
+            background: linear-gradient(135deg, #e8f0fa 0%, #f7faff 100%);
+            border-radius: 24px;
+            margin: 30px 0;
+            border: 1px solid #dde7f0;
+        }
+        .abschluss-box .big-icon {
+            font-size: 4.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .abschluss-box h2 {
+            font-size: 2rem;
+            color: #0b2b44;
+            margin-bottom: 12px;
+        }
+        .abschluss-box p {
+            color: #3d5a73;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto 12px;
+        }
+        .abschluss-box .datum {
+            display: inline-block;
+            background: #1a5c8a;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .info-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        .info-card .icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .info-card h4 {
+            color: #0b2b44;
+            margin-bottom: 6px;
+            font-size: 1.05rem;
+        }
+        .info-card p {
+            color: #5b6f82;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .archiv-title {
+            margin-top: 40px;
+            text-align: center;
+            color: #0b2b44;
+        }
+        .archiv-title p {
+            color: #5b6f82;
+            font-size: 0.95rem;
+            margin-top: 6px;
+        }
+
         .wahl-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin: 30px 0 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
         }
         .wahl-card {
             background: #f8fafc;
-            border-radius: 20px;
-            padding: 25px 20px 30px;
+            border-radius: 18px;
+            padding: 22px 18px 24px;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             border: 1px solid #e2e8f0;
             transition: transform 0.15s, box-shadow 0.15s;
+            opacity: 0.9;
         }
         .wahl-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+            opacity: 1;
         }
         .wahl-card .icon {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 8px;
         }
         .wahl-card h3 {
             color: #0b2b44;
-            margin-bottom: 8px;
-            font-size: 1.4rem;
+            margin-bottom: 6px;
+            font-size: 1.2rem;
         }
         .wahl-card p {
             color: #3d5a73;
-            font-size: 0.95rem;
-            margin-bottom: 18px;
+            font-size: 0.9rem;
+            margin-bottom: 14px;
             line-height: 1.5;
         }
         .wahl-card .btn-link {
             display: inline-block;
-            background: #1a5c8a;
-            color: white;
-            padding: 12px 30px;
+            background: #eef2f6;
+            color: #1d3b55;
+            padding: 10px 24px;
             border-radius: 60px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: background 0.15s;
-            box-shadow: 0 4px 0 #0f3b5a;
         }
         .wahl-card .btn-link:hover {
-            background: #1f6fa3;
+            background: #dce4ed;
         }
-        .wahl-card .btn-link:active {
-            transform: translateY(4px);
-            box-shadow: 0 2px 0 #0f3b5a;
-        }
+
         .hinweis-box {
             background: #fff3cd;
             border-left: 6px solid #ffc107;
@@ -74,6 +147,7 @@
             color: #0b2b44;
             font-weight: 600;
         }
+
         footer {
             text-align: center;
             margin-top: 30px;
@@ -84,65 +158,90 @@
         }
         @media (max-width: 650px) {
             .wahl-grid { grid-template-columns: 1fr; }
+            .abschluss-box h2 { font-size: 1.6rem; }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>🗳️ Wahl-O-Mat Verden 2026</h1>
-        <p>Vergleiche deine Positionen mit den Kandidat:innen und Parteien.</p>
-        <p style="font-size: 0.9rem; color: #666;">Wähle eine der folgenden Wahlen aus:</p>
+        <p>Die Wahl ist vorbei – vielen Dank für euer Interesse!</p>
     </header>
 
     <main>
         <section>
-            <div class="wahl-grid">
+            <!-- Abschluss-Box -->
+            <div class="abschluss-box">
+                <span class="big-icon">✅</span>
+                <h2>Die Wahl ist beendet</h2>
+                <p>
+                    Die Kommunal-, Bürgermeister- und Landratswahl in Verden (Aller)
+                    ist abgeschlossen. Vielen Dank an alle, die den Wahl-O-Mat zur
+                    Orientierung genutzt und uns Feedback gegeben haben!
+                </p>
+                <span class="datum">Wahltermin: 13. September 2026</span>
+            </div>
 
-                <!-- Karte: Stadtrat -->
+            <!-- Info-Karten -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="icon">📊</span>
+                    <h4>Ergebnisse</h4>
+                    <p>Die offiziellen Wahlergebnisse findest du auf der Seite der Stadt Verden.</p>
+                </div>
+                <div class="info-card">
+                    <span class="icon">🤝</span>
+                    <h4>Danke</h4>
+                    <p>Für über <strong>1.000 Aufrufe</strong> und zahlreiches Feedback – das hat uns sehr gefreut!</p>
+                </div>
+                <div class="info-card">
+                    <span class="icon">💬</span>
+                    <h4>Feedback</h4>
+                    <p>Ideen für die nächste Wahl? Schreib uns gerne eine E-Mail.</p>
+                </div>
+            </div>
+
+            <!-- Archiv: Wahl-O-Maten -->
+            <h2 class="archiv-title">📚 Archiv – Wahl-O-Maten</h2>
+            <p class="archiv-title" style="text-align:center;">
+                Die Wahl-O-Maten bleiben als Nachschlagewerk erhalten:
+            </p>
+
+            <div class="wahl-grid">
                 <div class="wahl-card">
                     <div class="icon">🏛️</div>
                     <h3>Stadtratswahl</h3>
-                    <p>
-                        Vergleich mit 7 Parteien (CDU, SPD, Grüne, FDP, Linke, Freie Wähler, AfD) zu 20 Thesen.
-                    </p>
-                    <a href="stadtrat.html" class="btn-link">Jetzt starten</a>
+                    <p>7 Parteien · 20 Thesen</p>
+                    <a href="stadtrat.html" class="btn-link">Zum Archiv</a>
                 </div>
-
-                <!-- Karte: Bürgermeister -->
                 <div class="wahl-card">
                     <div class="icon">👤</div>
                     <h3>Bürgermeisterwahl</h3>
-                    <p>
-                        Vergleich der vier Kandidat:innen: Claudia Lange, Björn Symank, Christina Hartmann, Benedikt Fischer.
-                    </p>
-                    <a href="buergermeister.html" class="btn-link">Jetzt starten</a>
+                    <p>4 Kandidat:innen · 10 Thesen</p>
+                    <a href="buergermeister.html" class="btn-link">Zum Archiv</a>
                 </div>
-
-                <!-- Karte: Landrat -->
                 <div class="wahl-card">
-                    <div class="icon">🏛️</div>
+                    <div class="icon">🌍</div>
                     <h3>Landratswahl</h3>
-                    <p>
-                        Vergleich der beiden Kandidaten: Peter Bohlmann (SPD/CDU) und Christoph Pein (FDP).
-                    </p>
-                    <a href="landrat.html" class="btn-link">Jetzt starten</a>
+                    <p>2 Kandidaten · 10 Thesen</p>
+                    <a href="landrat.html" class="btn-link">Zum Archiv</a>
                 </div>
-
             </div>
 
-            <!-- Entwicklungs-Hinweis & E-Mail -->
+            <!-- Hinweis + Kontakt -->
             <div class="hinweis-box">
-                <strong>🚧 Hinweis:</strong>
-                Diese Seiten befinden sich noch in der <strong>Entwicklungsphase</strong>.
-                Die Positionen basieren auf öffentlich zugänglichen Aussagen und sind teilweise geschätzt.
-                Sie ersetzen keine offizielle Wahlberatung.
-                <br>
-                📧 Für <strong>Rückmeldungen, Verbesserungsvorschläge oder Ideen</strong> schreibe uns gerne an:
+                <strong>ℹ️ Hinweis:</strong>
+                Diese Seiten dienen nur noch als Archiv. Die Positionen basieren auf den
+                öffentlich zugänglichen Aussagen der Kandidat:innen und Parteien (Stand: August 2026)
+                und sind teilweise geschätzt.
+                <br><br>
+                📧 Für <strong>Rückmeldungen, Lob, Kritik oder Ideen</strong> für zukünftige Wahlen:
                 <a href="mailto:mail@berglivedora1517.de">mail@berglivedora1517.de</a>
             </div>
 
             <footer>
-                <p>Stand: September 2026 · Wahltermine: 13.09.2026 (Hauptwahl) · 27.09.2026 (Stichwahl)</p>
+                <p>© 2026 Wahl-O-Mat Verden · Ein privates Projekt zur politischen Bildung</p>
+                <p style="margin-top: 6px;">Wahltermin: 13.09.2026 · Stichwahl: 27.09.2026</p>
             </footer>
         </section>
     </main>
