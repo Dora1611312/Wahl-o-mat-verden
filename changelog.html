@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Changelog des Wahl-O-Mat Verden">
+    <title>Changelog · Wahl-O-Mat Verden</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <style>
+        .changelog-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .changelog-intro p {
+            color: #5b6f82;
+            line-height: 1.6;
+        }
+        .release {
+            border-left: 5px solid #1a5c8a;
+            padding: 4px 0 4px 24px;
+            margin: 28px 0;
+        }
+        .release h3 {
+            color: #0b2b44;
+            margin-bottom: 12px;
+        }
+        .release-date {
+            color: #5b6f82;
+            font-size: .9rem;
+            font-weight: 400;
+        }
+        .release ul {
+            padding-left: 20px;
+            color: #3d5a73;
+            line-height: 1.7;
+        }
+        .release li + li { margin-top: 6px; }
+        .back-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #1a5c8a;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📝 Changelog</h1>
+        <p>Wahl-O-Mat Verden</p>
+    </header>
+
+    <main>
+        <section>
+            <div class="changelog-intro">
+                <h2>Änderungshistorie</h2>
+                <p>Eine Übersicht über die wichtigsten Funktionen und Inhalte des Projekts.</p>
+            </div>
+
+            <article class="release">
+                <h3>Aktueller Stand <span class="release-date">· 2026</span></h3>
+                <ul>
+                    <li>Wahl-O-Mat für die Kommunal-, Bürgermeister- und Landratswahl in Verden veröffentlicht.</li>
+                    <li>Archiv-Seite auf der Startseite ergänzt, nachdem die Wahl beendet ist.</li>
+                    <li>Direkte Einstiege zu Stadtratswahl, Bürgermeisterwahl und Landratswahl bereitgestellt.</li>
+                    <li>Hinweise zum Wahltermin, zum abgeschlossenen Wahlzeitraum und zum Feedback ergänzt.</li>
+                </ul>
+            </article>
+
+            <article class="release">
+                <h3>Wahl-O-Mat-Funktionen</h3>
+                <ul>
+                    <li>Thesen werden aus <code>data/Wahlomat.json</code> geladen.</li>
+                    <li>Antworten können per Mausklick oder über die Zahlentasten 1 bis 5 ausgewählt werden.</li>
+                    <li>Fortschrittsanzeige und Navigation durch die Fragen integriert.</li>
+                    <li>Übereinstimmung mit Parteien und Kandidat:innen wird automatisch berechnet und sortiert angezeigt.</li>
+                    <li>Neustart des Wahl-O-Maten sowie Tastaturbedienung mit Enter unterstützt.</li>
+                </ul>
+            </article>
+
+            <article class="release">
+                <h3>Technische Basis</h3>
+                <ul>
+                    <li>Responsive Oberfläche mit HTML und CSS für Desktop- und Mobilgeräte.</li>
+                    <li>JavaScript-basierte Auswertung ohne zusätzliche Abhängigkeiten.</li>
+                    <li>Eigene Datenbereiche für die verschiedenen Wahltypen und wiederverwendbare Seitenstruktur.</li>
+                </ul>
+            </article>
+
+            <a class="back-link" href="index.html">← Zurück zur Startseite</a>
+        </section>
+    </main>
+</body>
+</html>

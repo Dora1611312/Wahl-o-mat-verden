@@ -155,6 +155,28 @@
             text-decoration: underline;
         }
 
+        .project-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 25px 0;
+        }
+        .project-links a {
+            display: inline-block;
+            background: #1a5c8a;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.15s, transform 0.15s;
+        }
+        .project-links a:hover {
+            background: #1f6fa3;
+            transform: translateY(-1px);
+        }
+
         footer {
             text-align: center;
             margin-top: 25px;
@@ -179,8 +201,6 @@
 
     <main>
         <section>
-
-            <!-- 🛑 ZENTRALE ABSCHLUSS-BOX -->
             <div class="end-box">
                 <span class="big-icon">✅</span>
                 <h2>Die Wahl ist beendet</h2>
@@ -191,7 +211,6 @@
                 <span class="datum">Wahltermin: 13. September 2026</span>
             </div>
 
-            <!-- 💚 DANKE-BOX -->
             <div class="danke-box">
                 <h3>Vielen Dank!</h3>
                 <p>
@@ -201,7 +220,6 @@
                 </p>
             </div>
 
-            <!-- 📚 ARCHIV -->
             <div class="archiv-header">
                 <h2>📚 Archiv – Rückblick auf die Wahl-O-Maten</h2>
                 <p>Die Inhalte bleiben als Nachschlagewerk erhalten:</p>
@@ -228,13 +246,17 @@
                 </div>
             </div>
 
-            <!-- 💬 KONTAKT -->
             <div class="kontakt-box">
                 <p>
                     💬 <strong>Feedback, Ideen oder Kritik?</strong><br>
                     Schreib uns gerne eine E-Mail an
                     <a href="mailto:Dora_161!">Dora_161@proton.me</a>
                 </p>
+            </div>
+
+            <div class="project-links" aria-label="Projektlinks">
+                <a href="changelog.html">📝 Changelog ansehen</a>
+                <a href="https://github.com/Dora1611312/Wahl-o-mat-verden" target="_blank" rel="noopener noreferrer">💻 Quellcode auf GitHub</a>
             </div>
 
             <footer>
